@@ -14,10 +14,6 @@ gridSquare.setAttribute("class", "gridSquare");
 
 const squares = [];
 
-for (let i = 1; i <= 256; i++) {
-  squares.push(gridSquare.cloneNode(true));
-}
-
 newGridButton.addEventListener("click", (event) => {
   const numberOfSquare = parseInt(prompt("Enter the number of squares"));
 
@@ -29,7 +25,7 @@ newGridButton.addEventListener("click", (event) => {
     for (let i = 1; i <= (numberOfSquare * numberOfSquare); i++) {
       squares.push(gridSquare.cloneNode(true));
     }
-    
+
     squares.forEach((square) => {
       container.appendChild(square);
     })
@@ -48,7 +44,3 @@ container.addEventListener("mouseover", (event) => {
 });
 
 wrapper.appendChild(newGridButton);
-
-squares.forEach((square) => {
-  container.appendChild(square);
-})
