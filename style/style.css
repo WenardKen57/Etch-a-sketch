@@ -8,11 +8,10 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 #container {
-  width: 250px;
+  width: 100vw;
   height: 200px;
   display: flex;
   justify-content: center;
@@ -29,3 +28,4 @@ body {
   text-align: center;
   
 }
+
