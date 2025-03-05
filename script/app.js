@@ -21,7 +21,6 @@ newGridButton.addEventListener("click", (event) => {
     squares.length = 0;
     container.innerHTML = "";
 
-    console.log(squares.length);
     for (let i = 1; i <= (numberOfSquare * numberOfSquare); i++) {
       squares.push(gridSquare.cloneNode(true));
     }
@@ -29,17 +28,29 @@ newGridButton.addEventListener("click", (event) => {
     squares.forEach((square) => {
       container.appendChild(square);
     })
-    console.log(squares.length);
+
   } else {
     return;
   }
 });
 
+function randomInteger(max) {
+  return Math.floor(Math.random()*(max + 1));
+}
+
+function randomRgbColor() {
+  let r = randomInteger(255);
+  let g = randomInteger(255);
+  let b = randomInteger(255);
+  return [r,g,b];
+}
+
 container.addEventListener("mouseover", (event) => {
   let target = event.target;
 
   if (target.className === "gridSquare") {
-    target.style.backgroundColor = "red";
+    let randomRGB = randomRgbColor();
+    target.style.backgroundColor = `rgb(${randomRGB[0]}, ${randomRGB[1]}, ${randomRGB[2]})`;
   }
 });
 
