@@ -4,9 +4,16 @@
   box-sizing: border-box;
 }
 
-#container {
-  width: 500px;
+body {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 250px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;

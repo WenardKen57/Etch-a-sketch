@@ -2,8 +2,6 @@ const container = document.querySelector("#container");
 
 const gridSquare = document.createElement("div");
 
-gridSquare.textContent = "Hello";
-
 gridSquare.setAttribute("class", "gridSquare");
 
 const squares = [];
