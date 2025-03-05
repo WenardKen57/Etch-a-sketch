@@ -22,13 +22,26 @@ newGridButton.addEventListener("click", (event) => {
   const numberOfSquare = parseInt(prompt("Enter the number of squares"));
 
   if (!isNaN(numberOfSquare) && numberOfSquare > 0 && numberOfSquare <= 100) {
-    console.log(numberOfSquare);
+    squares.length = 0;
+    container.innerHTML = "";
+
+    console.log(squares.length);
+    for (let i = 1; i <= (numberOfSquare * numberOfSquare); i++) {
+      squares.push(gridSquare.cloneNode(true));
+    }
+    
+    squares.forEach((square) => {
+      container.appendChild(square);
+    })
+    console.log(squares.length);
+  } else {
+    return;
   }
 });
 
 container.addEventListener("mouseover", (event) => {
   let target = event.target;
-  console.log(target.className)
+
   if (target.className === "gridSquare") {
     target.style.backgroundColor = "red";
   }
