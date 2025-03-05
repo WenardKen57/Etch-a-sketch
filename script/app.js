@@ -10,7 +10,13 @@ for (let i = 1; i <= 256; i++) {
   squares.push(gridSquare.cloneNode(true));
 }
 
-squares[15].style.backgroundColor = 'red';
+container.addEventListener("mouseover", (event) => {
+  let target = event.target;
+  console.log(target.className)
+  if (target.className === "gridSquare") {
+    target.style.backgroundColor = "red";
+  }
+});
 
 squares.forEach((square) => {
   container.appendChild(square);
