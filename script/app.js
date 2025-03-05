@@ -4,12 +4,11 @@ const gridSquare = document.createElement("div");
 
 gridSquare.textContent = "Hello";
 
-gridSquare.setAttribute("id", "gridSquare");
-gridSquare.setAttribute("style", "border: 1px solid black;")
+gridSquare.setAttribute("class", "gridSquare");
 
 const squares = [];
 
-for (let i = 0; i <= 16; i++) {
+for (let i = 1; i <= 16; i++) {
   squares.push(gridSquare.cloneNode(true));
 }
 
