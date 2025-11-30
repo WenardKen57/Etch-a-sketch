@@ -1,16 +1,26 @@
-# Etch-a-sketch
+# 🎨 Etch-a-Sketch
 
-A sketch pad where you can draw by hovering your mouse on squares.
+A fun and interactive sketch pad where you can draw simply by hovering your mouse over the grid squares.  
+Built to practice DOM manipulation, event handling, and dynamic styling.
 
-# Table of content
+---
+
+## 📌 Table of Contents
 
 - [Preview](#preview)
-- [Live](#live)
+- [Live Demo](#live-demo)
 
-# Preview
+---
+
+## 👀 Preview
 
 ![Preview](./preview/preview.png)
 
-# Live
+---
 
-[Live](https://wenardken57.github.io/Etch-a-sketch/)
+## 🚀 Live Demo
+
+Try it out here:  
+**https://wenardken57.github.io/Etch-a-sketch/**
+
+---
